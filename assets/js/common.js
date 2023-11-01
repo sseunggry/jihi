@@ -1,6 +1,6 @@
 /* common */
 $(function(){
-    accordionFn();
+    // accordionFn();
 });
 
 function accordionFn(){
