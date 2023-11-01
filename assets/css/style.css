@@ -129,7 +129,7 @@
 }
 
 .cont-area .txt-box {
-  padding: 130px 82px 0 300px;
+  padding: 130px 82px 217px 300px;
 }
 
 .cont-area .txt-box .title {
@@ -264,7 +264,7 @@ section {
   padding: 130px 0;
 }
 
-.container {
+section .container {
   margin-top: 50px;
 }
 
@@ -658,22 +658,18 @@ section {
   color: #667085;
   border-radius: 0px 0px 6px 6px;
   border: 1px solid #EAECF0;
-  margin-top: -1px;
+  margin-top: -2px;
   box-sizing: border-box;
 }
 
-.questions-list .questions .quest-btn:active ~ .txt-box {
-  display: block;
-}
-
-.questions-list .questions .quest-btn:active {
+.questions-list .questions .quest-btn.active {
   border-radius: 8px 8px 0px 0px;
   border-color: #444CE7;
   background: #444CE7;
   color: #fff;
 }
 
-.questions-list .questions .quest-btn:active::after {
+.questions-list .questions .quest-btn.active::after {
   background: url(../img/content/minus.png) no-repeat 100%/contain;
 }
 
@@ -695,6 +691,7 @@ section {
 
 .blog .item-group .item .txt-group {
   margin-top: 20px;
+  min-height: 98px;
 }
 
 .blog .item-group .item .txt-group .date {
@@ -710,7 +707,7 @@ section {
   margin-top: 10px;
 }
 
-.blog .item-group .item .txt-group .more-btn {
+.blog .item-group .item .more-btn {
   font-size: 16px;
   font-weight: 500;
   background-color: #444CE7;
@@ -720,9 +717,74 @@ section {
   margin-top: 20px;
 }
 
-.blog .item-group .item .txt-group .more-btn.type2 {
+.blog .item-group .item .more-btn.type2 {
   background-color: #E0EAFF;
   color: #344054;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   margin-top: 20px;
+}
+
+.footer {
+  padding: 100px 0;
+  background: #F5F8FF;
+  max-height: 428px;
+}
+
+.f-area {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.f-area .f-menu-group {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 256px;
+}
+
+.f-area .f-menu-group .f-menu + .f-menu {
+  margin-left: 100px;
+}
+
+.f-area .f-menu-group .f-menu .title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #344054;
+}
+
+.f-area .f-menu-group .f-menu .f-list li {
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  margin-top: 14px;
+}
+
+.f-area .f-menu-group .f-menu .f-list li + li {
+  margin-top: 15px;
+}
+
+.f-copyright {
+  background: #444CE7;
+}
+
+.f-copyright .copyright-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.f-copyright .copyright-area .txt {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #FFF;
+}
+
+.f-copyright .copyright-area .card-img {
+  max-width: 224px;
 }

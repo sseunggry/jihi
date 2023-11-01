@@ -423,7 +423,7 @@
                 </div>
                 <div class="questions-list">
                     <div class="questions">
-                        <button type="button" class="btn quest-btn active">01. What does you do?</button>
+                        <button type="button" class="btn quest-btn">01. What does you do?</button>
                         <div class="txt-box">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquam amet distinctio, impedit sequi laboriosam esse magni
@@ -500,24 +500,24 @@
                             <div class="txt-group">
                                 <p class="date">Tuesday 19 June, 2021</p>
                                 <p class="txt">Get the best night’s sleep of your life at these nine hotels</p>
-                                <button type="button" class="btn more-btn">Read More</button>
                             </div>
+                            <button type="button" class="btn more-btn">Read More</button>
                         </div>
                         <div class="item">
                             <img src="./assets/img/content/blog-thumb-02.jpg" class="item-img" alt="blog02">
                             <div class="txt-group">
                                 <p class="date">Friday 20 June, 2021</p>
                                 <p class="txt">These are the top 7 luxury hotels in the world</p>
-                                <button type="button" class="btn more-btn type2">Read More</button>
                             </div>
+                            <button type="button" class="btn more-btn type2">Read More</button>
                         </div>
                         <div class="item">
                             <img src="./assets/img/content/blog-thumb-03.jpg" class="item-img" alt="blog03">
                             <div class="txt-group">
                                 <p class="date">Sunday 22 June, 2021</p>
                                 <p class="txt">Dreaming of the Maldives? These are the 7 best eco-hotels in 2022</p>
-                                <button type="button" class="btn more-btn type2">Read More</button>
                             </div>
+                            <button type="button" class="btn more-btn type2">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -527,19 +527,68 @@
 
         <!-- footer -->
         <footer class="footer">
+            <div class="f-area">
+                <a href="#" class="logo"><img src="./assets/img/content/logo.svg" alt="logo"></a>
+                <div class="f-menu-group">
+                    <div class="f-menu">
+                        <p class="title">Say Hello</p>
+                        <ul class="f-list">
+                            <li><a href="#">rents@email.com</a></li>
+                            <li><a href="#">https://xirosoft.com</a></li>
+                            <li><a href="#">+1 569 256 25 96</a></li>
+                        </ul>
+                    </div>
 
+                    <div class="f-menu">
+                        <p class="title">Address</p>
+                        <ul class="f-list">
+                            <li>Germany — 785 15h Street,</li>
+                            <li>Office 478</li>
+                            <li>Berlin, De 81566</li>
+                        </ul>
+                    </div>  
+                    <div class="f-menu">
+                        <p class="title">Useful Links</p>
+                        <ul class="f-list">
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">News & Blogs</a></li>
+                            <li><a href="#">Termes Of Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <div class="f-copyright">
+            <div class="copyright-area">
+                <p class="txt">Copyright © 2023 All Rights Reserved</p>
+                <img src="./assets/img/content/payment.png" alt="card-img" class="card-img" >
+            </div>
+        </div>
         <!-- //footer -->
     </div>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+        $(function(){       
+            
+            // $('.questions .quest-btn').on('click', function() {
+            //     $(this).toggleClass('active');
+
+            //     if($(this).hasClass('active')) {
+            //         $(this).siblings('.txt-box').show();
+            //     } else {
+            //         $(this).siblings('.txt-box').hide();
+            //     }
+            // });
+
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+
         });
       </script>
 </body>
